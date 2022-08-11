@@ -8,27 +8,40 @@
 
 </head>
 <body>
-    <form action="https://send.pageclip.co/VVgXX18tMVNtHUqd8UNlVAx0IPXcXY6A/contact_form" class="pageclip-form" method="post">
-        <ul>
-         <li>
-           <label for="name">Name:</label>
-           <input type="text" id="name" name="user_name">
-         </li>
-         <li>
-           <label for="mail">E-mail:</label>
-           <input type="email" id="mail" name="user_email">
-         </li>
-         <li>
-           <label for="msg">Messabge:</label>
-           <textarea id="msg" name="user_message"></textarea>
-         </li>
-         <button type="submit" class="pageclip-form__submit">
-            <span>Send</span>
-        </button>
-        </ul>
-       </form>
+    <form name="contactForm" id="contact_form" class="form_control" method="post" action="https://send.pageclip.co/VVgXX18tMVNtHUqd8UNlVAx0IPXcXY6A">
+        <div class="col-md-6">
+            <div class="field-set">
+                <input type="text" name="name" id="name"  class="form-control" placeholder="Your Name" />
+                <div class="line-fx"></div>
+            </div>
 
+            <div class="field-set">
+                <input type="text" name="email" id="email"" class="form-control" placeholder="Your Email" />
+                <div class="line-fx"></div>
+            </div>
 
+            <div class="field-set">
+                <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone" />
+                <div class="line-fx"></div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="field-set">
+                <textarea name="message" id="message"  class="form-control" placeholder="Your Message"></textarea>
+                <div class="line-fx"></div>
+            </div>
+        </div>
+
+        <div class="spacer-single"></div>
+
+        <div class="col-md-12 text-center">
+            <div id="submit">
+                <input type="submit" id="send_message" value="Submit Form" class="form_control" />
+            </div>
+        </div>
+    </form>
        <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 </html>
+
